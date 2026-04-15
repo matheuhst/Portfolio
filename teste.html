@@ -6,21 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="parallax">
-    <img src="logo.png" class="layer" data-speed="5">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+<div id="scene">
+    <img data-depth="0.2" src="logo.png"/>
 </div>
 
 <script>
-document.addEventListener("mousemove", (e) => {
-    document.querySelectorAll(".layer").forEach(el => {
-        const speed = el.getAttribute("data-speed");
-
-        const x = (window.innerWidth - e.pageX * speed) / 100;
-        const y = (window.innerHeight - e.pageY * speed) / 100;
-
-        el.style.transform = `translate(${x}px, ${y}px)`;
-    });
-});
+new Parallax(document.getElementById('scene'));
 </script>
 </body>
 </html>
