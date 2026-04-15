@@ -4339,7 +4339,7 @@ fieldset:disabled .btn {
     background: 0 0;
     border: 0;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    margin-left: 35px
+    margin-left: 35px;
 }
 
 @media (prefers-reduced-motion:reduce) {
