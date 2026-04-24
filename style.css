@@ -12,11 +12,8 @@
     font-size: 210%;
 }
 
-.nav-bar a:hover i {
-    color: azure;
+.navbar .nav-item a:hover i {
+    color: #f5f5f5;
     transform: scale(1.1);
 }
 
-i {
-    color:red
-}
