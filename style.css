@@ -11,3 +11,8 @@
 .icons{
     font-size: 210%;
 }
+
+.a:hover i {
+    color: azure;
+    transform: scale(1.1);
+}
